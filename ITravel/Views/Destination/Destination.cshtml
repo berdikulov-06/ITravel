@@ -1,0 +1,122 @@
+﻿@inject ITravel.Models.LanguageService lang
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!-- end nav -->
+<section class="inner-banner" style="background-image:url(@Url.Content("~/images/banner/sub-page.png"))">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="banner-content">
+                    <h2>@lang.GetKey("destination")</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="@Url.Action("Index", "Home")">@lang.GetKey("home")</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">@lang.GetKey("destination")</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end banner -->
+<!-- start destination -->
+<section class="section-spacing inverse-bg destinations">
+    <div class="container">
+        <div class="row" data-cues="slideInLeft">
+            <div class="col-md-6 col-12">
+                <div class="destination-item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/male.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Маафуши</h4>
+                            <h3>Мальдивы</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="destination-item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/bankok.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Сентоза</h4>
+                            <h3>Сингапур</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/kuala-lumpur-panorama.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Kuala Lumpur</h4>
+                            <h3>Malaysia</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/tashkent.jpg" alt="" style="height: 160px">
+                        <div class="info-overlay">
+                            <h4>Ташкент</h4>
+                            <h3>Узбекистан</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/nepal.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Ма́ле</h4>
+                            <h3>Мальдивы</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/trending3.jpg" alt="" style="height: 160px">
+                        <div class="info-overlay">
+                            <h4>Хива</h4>
+                            <h3>Узбекистан</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/paris.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Париж</h4>
+                            <h3>Франции</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item mb-0">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/moscow.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Москва</h4>
+                            <h3>России</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end destination -->

@@ -1,0 +1,705 @@
+﻿@inject ITravel.Models.LanguageService lang
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!-- end nav -->
+<section class="carousel slide" id="banner" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="banner-caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hero-text">
+                                <h3 class="animated fadeInDown">@lang.GetKey("explore")</h3>
+                                <h1 class="animated fadeInUp">@lang.GetKey("start_planning")</h1>
+                                <p class="animated fadeInUp">@lang.GetKey("itravel_text")</p>
+                                <div class="banner-button-group">
+                                    <a href="@Url.Action("Contact", "Contact")" class="btn btn-primary animated fadeInUp">@lang.GetKey("contact")</a>
+                                    <a href="@Url.Action("Tour", "Tour")" class="btn btn-primary learn-more animated fadeInUp">@lang.GetKey("learn_more")</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="tilt-img" src="~/images/banner/slide-1.png" alt="Slider Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="banner-caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hero-text">
+                                <h3 class="animated fadeInLeft">@lang.GetKey("explore")</h3>
+                                <h1 class="animated fadeInLeft">@lang.GetKey("trusted_agency")</h1>
+                                <p class="animated fadeInLeft">@lang.GetKey("itravel_text")</p>
+                                <div class="banner-button-group">
+                                    <a href="@Url.Action("Contact", "Contact")" class="btn btn-primary animated fadeInUp">@lang.GetKey("contact")</a>
+                                    <a href="@Url.Action("Tour", "Tour")" class="btn btn-primary learn-more animated fadeInUp">@lang.GetKey("learn_more")</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="tilt-img" src="~/images/banner/slide-2.png" alt="Slider Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="banner-caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="hero-text">
+                                <h3 class="animated fadeInRight">@lang.GetKey("explore")</h3>
+                                <h1 class="animated fadeInRight">@lang.GetKey("exclusive")</h1>
+                                <p class="animated fadeInRight">@lang.GetKey("itravel_text")</p>
+                                <div class="banner-button-group">
+                                    <a href="@Url.Action("Contact", "Contact")" class="btn btn-primary animated fadeInUp">@lang.GetKey("contact")</a>
+                                    <a href="@Url.Action("Tour", "Tour")" class="btn btn-primary learn-more animated fadeInUp">@lang.GetKey("learn_more")</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="tilt-img" src="~/images/banner/slide-3.png" alt="Slider Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <div class="shape1 d-none d-lg-block">
+            <img src="~/images/banner/banner-shape1.png" alt="">
+        </div>
+        <div class="shape2 d-none d-lg-block">
+            <img src="~/images/banner/banner-shape2.png" alt="">
+        </div>
+        <div class="shape3 d-none d-lg-block">
+            <img src="~/images/banner/banner-shape3.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- end banner -->
+<!-- start destination -->
+<section class="section-spacing inverse-bg destinations">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3 class="mt-n6">@lang.GetKey("destinations")</h3>
+                    <h2 class="mb-0">@lang.GetKey("choose_your_place")</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-cues="slideInLeft">
+            <div class="col-md-6 col-12">
+                <div class="destination-item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/tashkent.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Ташкент</h4>
+                            <h3>Узбекистан</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="destination-item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/buxoro.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Бухара</h4>
+                            <h3>Узбекистан</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/trending3.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Хива</h4>
+                            <h3>Узбекистан</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/trendingb-1.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Самарканд</h4>
+                            <h3>Узбекистан</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="destination-item item mb-0">
+                    <a href="@Url.Action("Tour", "Tour")">
+                        <img src="~/images/destinations/ulugbek-madrasah.jpg" alt="">
+                        <div class="info-overlay">
+                            <h4>Хорезм</h4>
+                            <h3>Узбекистан</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end destination -->
+<!-- start about us -->
+<section class="section-spacing about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-5">
+                <div class="about-us-left" data-cues="slideInUp">
+                    <h3 class="mt-n6">@lang.GetKey("about_company")</h3>
+                    <p>@lang.GetKey("about_text_1")</p>
+                    <div class="about-info" data-cues="slideInLeft">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <span class="align-self-start mr-3 media-icon">
+                                    <i class="far fa-compass"></i>
+                                </span>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mt-0">@lang.GetKey("quick_booking")</h5>
+                                <p>@lang.GetKey("quick_booking_text")</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <span class="align-self-start mr-3 media-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </span>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mt-0">@lang.GetKey("favorable_prices")</h5>
+                                <p>@lang.GetKey("favorable_prices_text")</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <span class="align-self-start mr-3 media-icon">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                </span>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mt-0">@lang.GetKey("any_tours")</h5>
+                                <p>@lang.GetKey("any_tours_text")</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-button">
+                        <a href="@Url.Action("Booking", "Booking")" class="btn btn-primary">@lang.GetKey("booking_now")</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-7">
+                <div class="about-right">
+                    <img class="tilt-img" src="~/images/about/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end about us -->
+<!-- start features -->
+<section class="section-spacing features" style="background-image: url(@Url.Content("~/images/features/1.png")" );">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-md-7 col-lg-5" data-cues="slideInRight">
+                <h2>@lang.GetKey("about_text_3")</h2>
+                <p>@lang.GetKey("about_text_2")</p>
+                <div class="play-button" data-cues="slideInRight">
+                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#video-modal">
+                        <i class="fa fa-play"></i>
+                    </a>
+                </div>
+                <div class="features-items" data-cues="slideInRight">
+                    <div class="feature-item">
+                        <h3>
+                            <span class="counter">1</span>
+                        </h3>
+                        <h4 class="mb-0">@lang.GetKey("year_experiance")</h4>
+                    </div>
+                    <div class="feature-item">
+                        <h3>
+                            <span class="counter">100</span>%
+                        </h3>
+                        <h4 class="mb-0">@lang.GetKey("trusted_agency")</h4>
+                    </div>
+                    <div class="feature-item">
+                        <h3>
+                            <span class="counter">99</span>%
+                        </h3>
+                        <h4 class="mb-0">@lang.GetKey("travel_happinies")</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end features -->
+<!-- start popular tours -->
+<section class="section-spacing tours">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3 class="mt-n6">@lang.GetKey("top_tours")</h3>
+                    <h2 class="mb-0">@lang.GetKey("popular_tours")</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-cues="slideInRight">
+
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/dubai.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 9 дней 8 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $600.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Самые популярные места — Дубай с его небоскребами, искусственными островами и торговыми центрами; </h6>
+                            <p class="mb-0">ОАЭ</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/trending-large.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 5 дней 4 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $350.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Недалеко от мечети Биби-Ханум расположен один из самых загадочных и неповторимых архитектурных памятников Самарканда - комплекс Шахи-Зинда</h6>
+                            <p class="mb-0">Комплекс Шахи-Зинда, Самарканд</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/154544.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 6 дней 5 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $400.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Он построен в начале XII века и представляет собой высоченную башню из жженого кирпича высотой 47 метров.</h6>
+                            <p class="mb-0">Минарет Калян, Бухара</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/turkiya.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 9 дней 8 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $500.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Турция — это разнообразная страна с богатой историей, прекрасными пляжами, культурными достопримечательностями и вкусной кухней.</h6>
+                            <p class="mb-0">Турция</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            
+
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/tashkent-e1585218964489.jpeg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 1 дней
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $95.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Экскурсия с гидом по столице Узбекистана. Старинные и современные памятники гостеприимного Ташкента.</h6>
+                            <p class="mb-0">Ташкент, Узбекистан</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/tailand1.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 9 дней 8 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $350.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Таиланд — это удивительная страна с богатой культурой, красивыми пляжами, экзотической природой и великолепной кухней.</h6>
+                            <p class="mb-0">Таиланд</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/qatar.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 4 дней 3 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $450.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Катар - это небольшая, но богатая и захватывающая страна, расположенная на побережье Персидского залива.</h6>
+                            <p class="mb-0">Доха</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/egeipt.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 6 дней 5 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $850.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Уникальная страна, на территории которой каждый найдет для себя что-нибудь интересное.</h6>
+                            <p class="mb-0">Египет, Шарм-эль-Шейх</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/malaysia.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 7 дней 6 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $770.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Куала-Лумпур раскинулся в юго-западной части Малаккского полуострова, в уютной долине рек Кланг и Гомбак</h6>
+                            <p class="mb-0">ЛАНГКАВИ + КУАЛА ЛУМПУР, Малайзия</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end popular tours -->
+<!-- start testimonials -->
+<section class="section-spacing reviews inverse-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3 class="mt-n6">@lang.GetKey("our_testimonails")</h3>
+                    <h2 class="mb-0">@lang.GetKey("travelers_texts")</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="reviews-left">
+                    <img class="tilt-img" src="~/images/testimonials/1.png" alt="">
+                    <div class="review-shape1"></div>
+                    <div class="review-shape2"></div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="carousel slide" id="testimonial-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="review-item">
+                                <h5>Индонезия</h5>
+                                <div class="traveller">( Шахло )</div>
+                                <p>@lang.GetKey("otziv1")</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="review-item">
+                                <h5>Паттайя</h5>
+                                <div class="traveller">( Антон и Наталья )</div>
+                                <p>@lang.GetKey("otziv2")</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="review-item">
+                                <h5>Италия</h5>
+                                <div class="traveller">( Гульнара и Наргиза )</div>
+                                <p>@lang.GetKey("otziv2")</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                @*<div class="brand-section" style="height:0px;">
+                    <div class="brand-image">
+                        <img src="~/images/testimonials/brand1.png" alt="">
+                    </div>
+                    <div class="h-border"></div>
+                    <div class="brand-image">
+                        <img src="~/images/testimonials/brand2.png" alt="">
+                    </div>
+                    <div class="h-border"></div>
+                    <div class="brand-image">
+                        <img src="~/images/testimonials/brand3.png" alt="">
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end testimonials -->
+<!-- start blog -->
+@*<section class="section-spacing blogs" style="visibility:collapse; height:0px; " >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3 class="mt-n6">From The Blog Post</h3>
+                    <h2 class="mb-0">Latest News & Articles</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-cues="zoomOut">
+            <div class="col-md-6 col-lg-4">
+                <a href="blog-single.html">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/trending-large.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 04 Dec
+                        </span>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="align-self-start mr-3 media-icon">
+                                        <img src="~/images/blog/author.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="m-0">Jony bristow</h5>
+                                    <p class="m-0">Admin</p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <span class="align-self-end"> 10:30 AM </span>
+                                </div>
+                            </div>
+                            <h6>A good traveler has no fixed plans and is not intent on arriving.</h6>
+                            <span class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="blog-single.html">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/tashkent-e1585218964489.jpeg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 04 Dec
+                        </span>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="align-self-start mr-3 media-icon">
+                                        <img src="~/images/blog/author.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="m-0">Jony bristow</h5>
+                                    <p class="m-0">Admin</p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <span class="align-self-end"> 10:30 AM </span>
+                                </div>
+                            </div>
+                            <h6>A good traveler has no fixed plans and is not intent on arriving.</h6>
+                            <span class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="blog-single.html">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/154544.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 04 Dec
+                        </span>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="align-self-start mr-3 media-icon">
+                                        <img src="~/images/blog/author.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="m-0">Jony bristow</h5>
+                                    <p class="m-0">Admin</p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <span class="align-self-end"> 10:30 AM </span>
+                                </div>
+                            </div>
+                            <h6>A good traveler has no fixed plans and is not intent on arriving.</h6>
+                            <span class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 d-block d-lg-none">
+                <a href="blog-single.html">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/blog/1.png" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 04 Dec
+                        </span>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <span class="align-self-start mr-3 media-icon">
+                                        <img src="~/images/blog/author.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="m-0">Jony bristow</h5>
+                                    <p class="m-0">Admin</p>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <span class="align-self-end"> 10:30 AM </span>
+                                </div>
+                            </div>
+                            <h6>A good traveler has no fixed plans and is not intent on arriving.</h6>
+                            <span class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>*@
+<!-- end blog -->

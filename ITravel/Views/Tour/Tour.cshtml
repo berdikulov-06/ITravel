@@ -1,0 +1,321 @@
+﻿@inject ITravel.Models.LanguageService lang
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- end nav -->
+
+
+
+<section class="inner-banner" style="background-image:url(@Url.Content("~/images/banner/sub-page.png"))">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="banner-content">
+                    <h2>@lang.GetKey("tour_list")</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="@Url.Action("Index", "Home")">@lang.GetKey("home")</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">@lang.GetKey("tour_list")</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end banner -->
+
+
+<!-- start popular tours -->
+<section class="section-spacing-tours tours">
+    <div class="container">
+        <div class="row align-items-center tour-bar-row">
+            <div class="col">
+@*                <p class="tour-bar-text">Showing 1-6 of 20 results</p>*@
+            </div>
+            <div class="col d-flex justify-content-end">
+                <div class="custom-select">
+                    <select>
+                        <option value="0">Sort</option>
+                        <option value="1">Date</option>
+                        <option value="2">Rating</option>
+                    </select>
+                </div>
+                <a href="@Url.Action("Tour", "Tour")" class="tour-bar-icon">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="@Url.Action("Tour", "Tour")" class="tour-bar-icon">
+                    <i class="fas fa-th-large"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row" data-cues="slideInLeft" >
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/Georgia_397-1024x768.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 	8 дней 7 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $438.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>
+                                Туры в Грузию под прямые перелеты из Ташкента. Тбилиси, Батуми, Боржоми, Казбеги и др.
+                            </h6>
+                            <p class="mb-0">Атмосферная Грузия</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/turi-v-oae_tury_v_dubai-min.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 	7 дней / 6 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $525.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>
+                                Отдых на лучших курортах ОАЭ. Туры в красочный Дубай. Дубай, Абу-Даби, Фуджейра, Шарджа
+                            </h6>
+                            <p class="mb-0">Выгодные туры в ОАЭ</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/turi-v-katar_2.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 	8 дней 7 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $580.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>
+                                Прямые рейсы из Ташкента | а/к Centrum Air Доха
+                            </h6>
+                            <p class="mb-0">Звездный Катар</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/turi-v-egipet-turi-v-sharm-ek-sheih-min.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 7 до 14 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $450.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>
+                                Тур пакет в солнечный Шарм-эль-Шейх Авиаперелет Проживание
+                            </h6>
+                            <p class="mb-0">Все включено в Египте!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/tur-abu-dabidubay.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 	8 дней 7 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $580.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>
+                                Выгодный экскурсионный комби-тур Абу-Даби + Дубай
+                            </h6>
+                            <p class="mb-0">Чудеса Эмиратов</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/turi-v-tailand-min.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> 	8 дней 7 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $590.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>
+                                Выгодные турпакеты в тропики. Таиланд - остров Пхукет
+                            </h6>
+                            <p class="mb-0">Туры в Таиланд</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/qatar.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 4 дней 3 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $450.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Катар - это небольшая, но богатая и захватывающая страна, расположенная на побережье Персидского залива.</h6>
+                            <p class="mb-0">Доха</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/egeipt.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 6 дней 5 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $850.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Уникальная страна, на территории которой каждый найдет для себя что-нибудь интересное.</h6>
+                            <p class="mb-0">Египет, Шарм-эль-Шейх</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="@Url.Action("Tour", "Tour")">
+                    <div class="card tour-card wow fadeIn">
+                        <img class="card-img-top" src="~/images/tour/malaysia.jpg" alt="">
+                        <span class="tour-duration">
+                            <i class="fas fa-history"></i> От 7 дней 6 ночей
+                        </span>
+                        <div class="card-body">
+                            <div class="tour-tags">
+                                <span class="tour-price">От $770.00</span>
+                                <span class="tour-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i> (2)
+                                </span>
+                            </div>
+                            <h6>Куала-Лумпур раскинулся в юго-западной части Малаккского полуострова, в уютной долине рек Кланг и Гомбак</h6>
+                            <p class="mb-0">ЛАНГКАВИ + КУАЛА ЛУМПУР, Малайзия</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="pagination-container">
+                <ul class="pagination justify-content-center">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">
+                                <i class="fa fa-angle-double-left"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">
+                                <i class="fa fa-angle-double-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end popular tours -->

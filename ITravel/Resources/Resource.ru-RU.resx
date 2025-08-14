@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about_company" xml:space="preserve">
+    <value>О компании</value>
+  </data>
+  <data name="about_text_1" xml:space="preserve">
+    <value>Компания «ITRAVEL TASHKENT» основана в 2023 году. Он предлагает вам большие возможности путешествовать в разных направлениях. Разные страны помогут вам путешествовать и наслаждаться отдыхом. Мы предлагаем широкий спектр услуг: от оформления визы до организации индивидуальных или групповых поездок, бронирования билетов, отелей, трансфера, организации экскурсий и развлекательных программ.</value>
+  </data>
+  <data name="about_text_2" xml:space="preserve">
+    <value>Самое главное для нас – организация  максимально качественного отдыха, поэтому мы работаем только с проверенными и  надежными партнерами в туристической  сфере.</value>
+  </data>
+  <data name="about_text_3" xml:space="preserve">
+    <value>Путешествие за границу через агентство 'ITravel Tashkent'</value>
+  </data>
+  <data name="about_us" xml:space="preserve">
+    <value>О нас</value>
+  </data>
+  <data name="amount" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="any_tours" xml:space="preserve">
+    <value>Любые туры</value>
+  </data>
+  <data name="any_tours_text" xml:space="preserve">
+    <value>Доступные как групповые, так и индивидуальные туры</value>
+  </data>
+  <data name="booking" xml:space="preserve">
+    <value>Бронирование</value>
+  </data>
+  <data name="booking_now" xml:space="preserve">
+    <value>Забронируйте сейчас</value>
+  </data>
+  <data name="book_tour" xml:space="preserve">
+    <value>Забронировать этот тур</value>
+  </data>
+  <data name="categs" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="choose_your_place" xml:space="preserve">
+    <value>Выберите свое место</value>
+  </data>
+  <data name="contact" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="destination" xml:space="preserve">
+    <value>Направления</value>
+  </data>
+  <data name="destinations" xml:space="preserve">
+    <value>Направления</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Адрес электронной почты:</value>
+  </data>
+  <data name="enter_email" xml:space="preserve">
+    <value>Введите адрес электронной почты</value>
+  </data>
+  <data name="enter_message" xml:space="preserve">
+    <value>Введите ключевое слово</value>
+  </data>
+  <data name="enter_name" xml:space="preserve">
+    <value>Введите ваше имя</value>
+  </data>
+  <data name="exclusive" xml:space="preserve">
+    <value>Получите эксклюзивный тур</value>
+  </data>
+  <data name="explore" xml:space="preserve">
+    <value>Исследуйте свое путешествие</value>
+  </data>
+  <data name="faq" xml:space="preserve">
+    <value>Часто задаваемые вопросы</value>
+  </data>
+  <data name="faq1_header" xml:space="preserve">
+    <value>Как заказать тур?</value>
+  </data>
+  <data name="faq1_text" xml:space="preserve">
+    <value>Свяжите с нами по любому из перечисленных номеров: +998 97 333 22 23 и наши менеджеры грамотно подберут и составят тур именно для вас.</value>
+  </data>
+  <data name="faq2_header" xml:space="preserve">
+    <value>Могу ли я отказаться от тура?</value>
+  </data>
+  <data name="faq2_text" xml:space="preserve">
+    <value>Вы можете отказаться от тура в любое время, но при отказе от тура за 60 дней до вылета возможны штрафные санкции, все зависит от страны и условий наших контрактов. Условия аннуляции просим уточнить у менеджера во время бронирования.</value>
+  </data>
+  <data name="faq3_header" xml:space="preserve">
+    <value>Есть ли у вас филиалы в областях?</value>
+  </data>
+  <data name="faq3_text" xml:space="preserve">
+    <value>У нас нет филиалов в областях, но мы говорим на узбекском, русском и английском языках и сможем легко и быстро оформить тур дистанционно.</value>
+  </data>
+  <data name="favorable_prices" xml:space="preserve">
+    <value>Выгодные цены</value>
+  </data>
+  <data name="favorable_prices_text" xml:space="preserve">
+    <value>Лояльные цены на туры без переплат</value>
+  </data>
+  <data name="friendly_price" xml:space="preserve">
+    <value>Дружественная цена</value>
+  </data>
+  <data name="home" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="input_name" xml:space="preserve">
+    <value>Введите ваше имя</value>
+  </data>
+  <data name="itravel_text" xml:space="preserve">
+    <value>Я путешествую не для того, чтобы куда-то поехать, а чтобы поехать. Я путешествую ради путешествия, великое дело — передвигаться.</value>
+  </data>
+  <data name="learn_more" xml:space="preserve">
+    <value>Узнать больше</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="newsletter" xml:space="preserve">
+    <value>Получить информационный бюллетень</value>
+  </data>
+  <data name="otziv1" xml:space="preserve">
+    <value>«Большое спасибо туристическому агентству «ITravel Tashkent» за организацию нашей поездки. В ITravel Tashkent мы обратились, когда уже определились с туром, но, несмотря на это, она предложила свои варианты – сделала все, чтобы мы нашли для себя лучшее. Мы сделали правильный выбор и остались довольны поездкой! При выборе поездки менеджер всегда был дружелюбен и с ним было легко общаться. Она ответила на все наши вопросы, а я засыпала ее вопросами, как на экзамене – она всегда все подробно и понятно объясняла, предоставляла всю интересующую нас информацию. Особо отметила для себя, что за неделю до отъезда мне не нужно было ей звонить, писать, чтобы узнать, изменилось ли что-нибудь...</value>
+  </data>
+  <data name="otziv2" xml:space="preserve">
+    <value>«Наш обзор будет не только о Паттайе, а о туроператоре в целом. Впервые мы обратились в ITravel Tashkent, когда собирались на Иссык-Куль, и ни разу об этом не пожалели. Все было так, как было сказано на встрече, без прикрас, как это обычно бывает в турфирмах. Планируя поездку в Таиланд, мы без колебаний обратились в компанию ITravel Tashkent. Все, что он нам предложил, от хостела до экскурсий, было просто супер. Хостел просто великолепен - сервис, чистота, расположение, завтрак. ITravel Tashkent на связи 24 часа в сутки, и кажется, что он заботится о своих клиентах больше, чем они беспокоятся о себе. Еще раз спасибо за организацию такого чудесного отдыха!!!»</value>
+  </data>
+  <data name="otziv3" xml:space="preserve">
+    <value>«Незабываемое путешествие в Италию! Мы даже не предполагали, что эта страна настолько прекрасна, здесь много исторических мест. Брали групповую экскурсию по Италии классическую, группа была очень весёлая и огромное спасибо гиду, она нам действительно стала как родная, всё рассказала! Тур нам организовала компания ITravel Tashkent, она постоянно была на связи, но перед поездкой у нас были четкие инструкции по местам проживания и посещения! Тур оказался очень недорогим, все соответствовало цене и качеству, Яна предупредила, что отели на туре 3-4* - они действительно были! Отдых будем планировать только с этой компанией Itravel-Tashkent, вы молодцы! Большое спасибо за вашу работу! Теперь рекомендую вашу компанию всем своим друзьям! Желаю тебе успеха!"</value>
+  </data>
+  <data name="our_testimonails" xml:space="preserve">
+    <value>Наши Отзывы</value>
+  </data>
+  <data name="payment_methods" xml:space="preserve">
+    <value>Способы оплаты</value>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>Номер телефона:</value>
+  </data>
+  <data name="popular_tours" xml:space="preserve">
+    <value>Самые популярные туры</value>
+  </data>
+  <data name="quick_booking" xml:space="preserve">
+    <value>Быстрая бронь</value>
+  </data>
+  <data name="quick_booking_text" xml:space="preserve">
+    <value>Быстрое бронирование для экономии ваших затрат</value>
+  </data>
+  <data name="quick_links" xml:space="preserve">
+    <value>Быстрые ссылки</value>
+  </data>
+  <data name="reliable_tour" xml:space="preserve">
+    <value>Надежный турпакет</value>
+  </data>
+  <data name="reserved" xml:space="preserve">
+    <value>Все права защищены</value>
+  </data>
+  <data name="send_message" xml:space="preserve">
+    <value>Отправить сообщение</value>
+  </data>
+  <data name="start_planning" xml:space="preserve">
+    <value>Начните планировать путешествие своей мечты уже сегодня!</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Mijozlar Tomonidan Yaxshi Sharhlar</value>
+  </data>
+  <data name="subscribe" xml:space="preserve">
+    <value>Подписаться</value>
+  </data>
+  <data name="top_destinations" xml:space="preserve">
+    <value>Лучшие направления</value>
+  </data>
+  <data name="top_tours" xml:space="preserve">
+    <value>Рекомендуемые туры</value>
+  </data>
+  <data name="tours" xml:space="preserve">
+    <value>Туры</value>
+  </data>
+  <data name="tour_guide" xml:space="preserve">
+    <value>Туристический гид</value>
+  </data>
+  <data name="tour_list" xml:space="preserve">
+    <value>Список туров</value>
+  </data>
+  <data name="travelers_texts" xml:space="preserve">
+    <value>Хорошие Отзывы Клиентов</value>
+  </data>
+  <data name="travel_happinies" xml:space="preserve">
+    <value>Счастье в путешествии</value>
+  </data>
+  <data name="trusted_agency" xml:space="preserve">
+    <value>Надежное туристическое агентство</value>
+  </data>
+  <data name="year_experiance" xml:space="preserve">
+    <value>Многолетний опыт</value>
+  </data>
+</root>

@@ -1,0 +1,211 @@
+﻿@inject ITravel.Models.LanguageService lang
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ITRAVEL TASHKENT</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="~/css/animate.css" rel="stylesheet">
+    <!-- Jquery Ui CSS -->
+    <link href="~/css/jquery-ui.css" rel="stylesheet">
+    <!-- Datepicker CSS -->
+    <link href="~/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- Venobox CSS -->
+    <link href="~/css/venobox.css" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="~/fonts/font-awesome/css/all.min.css">
+    <!-- Main CSS -->
+    <link href="~/css/scrollCue.css" rel="stylesheet">
+    <!-- nice select CSS -->
+    <link href="~/css/nice-select.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="~/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!--Preload-->
+    <div class="preloader">
+        <div class="preloader_image">
+            <div class="sk-double-bounce">
+                <div class="sk-child sk-double-bounce1"></div>
+                <div class="sk-child sk-double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg primary-bg">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <img src="~/images/logo3.png" alt="Logo" width="200" height="80">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">@lang.GetKey("home")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("About", "About")">@lang.GetKey("about_us")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Tour", "Tour")">@lang.GetKey("tours")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Destination", "Destination")">@lang.GetKey("destinations")</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Contact", "Contact")">@lang.GetKey("contact")</a>
+                    </li>
+                </ul>
+                <div class="booking-button">
+                    <a href="@Url.Action("Booking", "Booking")" class="btn btn-primary btn-white">@lang.GetKey("booking_now")</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main-content">
+        @RenderBody()
+    </div>
+
+    <!-- start footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row" data-cues="slideInUp">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-widget">
+                            <h5>@lang.GetKey("top_destinations")</h5>
+                            <ul>
+                                <li>
+                                    <a href="@Url.Action("Tour", "Tour")">Индонезия, Джакарта</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Tour", "Tour")">Мальдивы, Мале</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Tour", "Tour")">Австралия, Канберра</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Tour", "Tour")">Таиланд, Бангкок</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Tour", "Tour")">Марокко, Рабат</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-2">
+                        <div class="footer-widget">
+                            <h5>@lang.GetKey("quick_links")</h5>
+                            <ul>
+                                <li>
+                                    <a href="@Url.Action("About", "About")">@lang.GetKey("about_us")</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Contact", "Contact")">@lang.GetKey("contact")</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Tour", "Tour")">@lang.GetKey("tours")</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Booking", "Booking")">@lang.GetKey("booking_now")</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-5">
+                        <div class="footer-widget">
+                            <h5>@lang.GetKey("newsletter")</h5>
+                            <form class="maan-coupon-form">
+                                <input type="text" class="form-control" placeholder="@lang.GetKey("email")">
+                                <button type="submit">@lang.GetKey("subscribe")</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-8 col-lg-9">
+                        <div class="footer-left">
+                            <div class="h-border"></div>
+                            <div class="copyright">
+                                <p>© 2024 ITravel Tashkent. @lang.GetKey("reserved")</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <ul class="team-social footer-social">
+
+                            <li><a asp-controller="Home" asp-action="ChangeCulture" asp-route-culture="ru-RU"><h5 class="mb-1 theme1"><img loading="lazy" src="~/images/ru.svg" width="24" height="24" alt="Russian"></h5></a></li>
+                            <li><a asp-controller="Home" asp-action="ChangeCulture" asp-route-culture="en-US"><h5 class="mb-1 theme1"><img loading="lazy" src="~/images/en.svg" width="24" height="24" alt="English"></h5></a></li>
+                            <li><a asp-controller="Home" asp-action="ChangeCulture" asp-route-culture="uz-Latn-UZ"><h5 class="mb-1 theme1"><img loading="lazy" src="~/images/uz.svg" width="24" height="24" alt="Uzbek"></h5></a></li>
+
+                            <li class="share-icon">
+                                <a href="https://t.me/xoqon_travels">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li class="share-icon">
+                                <a href="https://instagram.com/xoqon_travels">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Bact to top -->
+    <div class="back-top">
+        <a href="#">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="video-modal">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" style="border: 0; width: 100%; height: 500px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery-ui.min.js"></script>
+    <script src="~/js/jquery.easing.min.js"></script>
+    <script src="~/js/jquery.counterup.min.js"></script>
+    <script src="~/js/waypoints.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/wow.js"></script>
+    <script src="~/js/tilt.jquery.js"></script>
+    <script src="~/js/venobox.min.js"></script>
+    <script src="~/js/jquery.filterizr.min.js"></script>
+    <script src="~/js/sticky-kit.min.js"></script>
+    <script src="~/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/js/scrollCue.min.js"></script>
+    <script src="~/js/jquery.nice-select.min.js"></script>
+    <script src="~/js/script.js"></script>
+</body>
+</html>

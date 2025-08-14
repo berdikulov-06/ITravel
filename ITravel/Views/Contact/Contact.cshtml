@@ -1,0 +1,104 @@
+﻿@inject ITravel.Models.LanguageService lang
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!-- end nav -->
+<section class="inner-banner" style="background-image:url(@Url.Content("~/images/banner/sub-page.png"))">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="banner-content">
+                    <h2>@lang.GetKey("contact")</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="@Url.Action("Index", "Home")">@lang.GetKey("home")</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">@lang.GetKey("contact")</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end banner -->
+<!-- start contact -->
+<section class="section-spacing contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <div class="contact-icon">
+                        <a href="mailto:hayruddinovabdurasul@gmail.com">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        
+                    </div>
+
+                    <div style="text-align: left; float: left;">
+                        <p class="contact-text">@lang.GetKey("email") </p>
+
+                        <div class="h-border" style=" width:100%; margin:0 auto; margin-top:5px; margin-bottom:5px; height:2px;"></div>
+
+                        <div class="contact-sub-text" style="writing-mode:horizontal-tb; white-space:nowrap; ">
+                            <p style="margin:0;">
+                                <a href="mailto:hayruddinovabdurasul@gmail.com" style="display:block; text-decoration: none;"> hayruddinovabdurasul@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-info">
+                    
+                    <div class="contact-icon">
+                        <a href="tel:+998991108006">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+
+                    <div style="text-align: left; float: left;">
+                        <p class="contact-text">@lang.GetKey("phone") </p>
+
+                        <div class="h-border" style=" width:100%; margin:0 auto; margin-top:5px; margin-bottom:5px; height:2px;"></div>
+
+                        <div class="contact-sub-text" style="writing-mode:horizontal-tb; white-space:nowrap; ">
+                            <p style="margin:0;">
+                                <a href="tel:+998973332223" style="display:block; text-decoration: none;"> +998 97 333 22 23</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center contact-content">
+            <div class="col-md-5 contact-img">
+                <img class="tilt-img" src="~/images/contact/contact-img.png" alt="img">
+            </div>
+            <div class="col-md-7">
+                <div class="contact-form">
+                    <form>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" id="your_name" placeholder="@lang.GetKey("enter_name")">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" id="email_address" placeholder="@lang.GetKey("enter_email")">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="keyword" rows="6" placeholder="@lang.GetKey("enter_message")"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">@lang.GetKey("send_message")</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 contact-map">
+        <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Af2c03dcb0be2b3d7e5eed1b206658c29a92212c8ec948e8ff2d0a269f447f0b3&amp;source=constructor;source=constructor" class="google-map" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+<!-- end contact -->
